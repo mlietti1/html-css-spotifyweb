@@ -45,16 +45,6 @@ a.btn {
     justify-content: flex-end;
 }
 
-/* SIDEBAR */
-
-.sidebar {
-    width: 230px;
-    height: calc(100%-90px);
-    background-color: black;
-    top: 0;
-    left: 0;
-    z-index: 998;
-}
 
 /* HEADER */
 
@@ -78,13 +68,22 @@ header .btn {
 
 /* MAIN */
 
-main {
+.page-content {
     overflow-y: auto;
-    top: 0;
-    left: 230px;
-    width: calc(100vw - 230px);
-    height: calc(100vh - 180px);
+    height: calc(100vh - 90px);
+    padding-top: 90px;
 }
+
+/* SIDEBAR */
+
+.sidebar {
+    flex-basis: 230px;
+    height: calc(100vh - 90px);
+    min-width: 230px;
+    background-color: black;
+    z-index: 998;
+}
+
 
 /* FOOTER */
 
