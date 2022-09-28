@@ -6,12 +6,17 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    font-size: 14px;
+    color: #7A7A7A;
     background-color: #141922;
 }
 
 a.btn {
     text-decoration: none;
+    color: white;
+}
+
+h2, h3 {
     color: white;
 }
 
@@ -45,6 +50,10 @@ a.btn {
     justify-content: flex-end;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 
 /* HEADER */
 
@@ -61,18 +70,12 @@ header {
 header .btn {
     text-transform: uppercase;
     font-weight: 600;
-    padding: 15px 40px;
-    border: 2px solid white;
+    padding: 12px 40px;
+    border: 1px solid white;
     border-radius: 28px;
 }
 
 /* MAIN */
-
-.page-content {
-    overflow-y: auto;
-    height: calc(100vh - 90px);
-    padding-top: 90px;
-}
 
 /* SIDEBAR */
 
@@ -80,10 +83,60 @@ header .btn {
     flex-basis: 230px;
     height: calc(100vh - 90px);
     min-width: 230px;
+    padding-top: 20px;
     background-color: black;
     z-index: 998;
 }
 
+.logo {
+    padding-left: 20px;
+}
+
+.sidebar .logo img {
+    height: 40px;
+}
+
+/* CONTENT */
+
+.page-content {
+    overflow-y: auto;
+    height: calc(100vh - 90px);
+    width: calc(100vw - 230px);
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    padding: 0 0.7rem;
+}
+
+.menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7A7A7A;
+    font-weight: 600;
+}
+
+/* MUSIC */
+
+.recently-played {
+    margin: 2rem 0;
+}
+
+.recently-played h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
 
 /* FOOTER */
 
