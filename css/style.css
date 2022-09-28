@@ -9,6 +9,7 @@ body {
     font-size: 14px;
     color: #7A7A7A;
     background-color: #141922;
+    font-weight: 600;
 }
 
 a.btn {
@@ -44,6 +45,10 @@ h2, h3 {
 
 .flex-col {
     flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .justify-end {
@@ -82,7 +87,7 @@ header .btn {
 .sidebar {
     flex-basis: 230px;
     height: calc(100vh - 90px);
-    min-width: 230px;
+    width: 230px;
     padding-top: 20px;
     background-color: black;
     z-index: 998;
@@ -102,13 +107,11 @@ header .btn {
     overflow-y: auto;
     height: calc(100vh - 90px);
     width: calc(100vw - 230px);
-    padding-top: 90px;
-    padding-left: 20px;
+    padding: 90px 20px 0px 20px;
 }
 
 .menu {
     width: 100%;
-    text-align: center;
     margin: 1rem 0;
 }
 
@@ -137,6 +140,27 @@ header .btn {
     font-size: 1.5rem;
     margin: 2rem 0;
 }
+
+.col img {
+    width: 100%;
+}
+
+.row {
+    width: calc(100% / 3);
+}
+
+.col {
+    text-align: center;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 1rem;
+}
+
+.col h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
 
 /* FOOTER */
 

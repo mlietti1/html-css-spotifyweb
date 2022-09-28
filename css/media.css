@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+
+    .row {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .row {
+        width: 100%;
+    }
+
+    .sidebar {
+        max-width: 50px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .page-content {
+        width: calc(100vw - 50px);
+    }
+}
