@@ -93,8 +93,32 @@ header .btn {
     z-index: 998;
 }
 
-.logo {
+.sidebar a {
+    text-decoration: none;
+    color: #7A7A7A;
+}
+
+.menu-top ul {
+    list-style: none;
+}
+
+.menu-top ul li {
+    margin: 0.8rem 0;
+}
+
+.menu-top li svg {
+    width:1.5rem;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    color: #7A7A7A;
+}
+
+.container-side {
     padding-left: 20px;
+}
+
+.sidebar .logo {
+    margin-bottom: 1.5rem;
 }
 
 .sidebar .logo img {
