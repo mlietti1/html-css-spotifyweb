@@ -1,18 +1,27 @@
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1080px) {
 
     .row {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 640px) {
-    
+@media screen and (max-width: 800px) {
+
     .row {
         width: 100%;
     }
+
+    .ft-left {
+        height: 37px;
+    }
+
+    .ft-left {
+        height: 37px;
+    }
+
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   
     .sidebar {
         max-width: 50px;

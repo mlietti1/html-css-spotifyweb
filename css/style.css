@@ -90,6 +90,7 @@ header .btn {
     width: 230px;
     padding-top: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     background-color: black;
     z-index: 998;
 }
@@ -135,14 +136,39 @@ header .btn {
     margin-right: 0.5rem;
 }
 
-.menu-playlist nav ul {
+.pl-list ul {
     margin-top: 0.8rem;
-    overflow-y: scroll;
-    /* dare altezza ? */
+    overflow-y: auto;
+    height: calc(100vh - 480px);
 }
 
 .menu-playlist ul li {
     margin-bottom: 1rem;
+}
+
+.sidebar-ft {
+
+}
+
+.download {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #7A7A7A;
+}
+
+.download svg {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.profile svg {
+    height: 1rem;
+    width: 1rem;
+    color: white;
+    background-color: #7A7A7A;
+    border-radius: 1rem;
+    margin-right: 10px;
 }
 
 /* CONTENT */
@@ -221,4 +247,27 @@ footer {
     background-color: #282828;
     bottom: 0;
     left: 0;
+}
+
+.ft-left {
+    margin-left: 12px;
+    height: 42px;
+}
+
+.ft-left img {
+    object-fit: cover;
+}
+
+.ft-left .song-info {
+    margin-left: 12px;
+}
+
+.ft-left h5 {
+    color: white;
+    font-size: 14px;
+} 
+
+
+.ft-left span {
+    font-size: 12px;
 }
