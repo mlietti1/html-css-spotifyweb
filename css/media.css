@@ -26,6 +26,7 @@
   
     .sidebar {
         max-width: 50px;
+        padding: 4px;
     }
 
     .page-content {
@@ -42,8 +43,13 @@
 
     /* DISPLAY NONE */
 
-    .d-none {
+    .media-d-none {
         display: none;
+    }
+
+    .media-d-block {
+        display: block;
+        text-align: center;
     }
 
 }
