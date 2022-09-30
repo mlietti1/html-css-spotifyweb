@@ -11,27 +11,39 @@
         width: 100%;
     }
 
-    .ft-left {
+    .ft-left img {
+        min-width: 37px;
         min-height: 37px;
     }
 
-    .ft-left img {
-        min-width: 37px;
+    .volume .progressbar-bg {
+        width: 80px;
     }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   
     .sidebar {
         max-width: 50px;
     }
 
-    .logo img {
-        display: none;
-    }
-
     .page-content {
         width: calc(100vw - 50px);
     }
+
+    footer {
+        width: 100%;
+    }
+
+    .ft-left, .ft-right {
+        min-width: 100px;
+    }
+
+    /* DISPLAY NONE */
+
+    .d-none {
+        display: none;
+    }
+
 }

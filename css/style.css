@@ -21,6 +21,21 @@ h2, h3 {
     color: white;
 }
 
+/* HOVER UTILITIES */
+
+.playlist-btn:hover, 
+.menu-playlist a:hover, 
+.sidebar-ft .download:hover, 
+.ft-left .song-icons i:hover, 
+.ft-right i:hover, 
+.menu-top li:hover a, 
+.menu-top li:hover svg,
+.logo:hover, 
+.page-content li:hover a {
+    color: white;
+    cursor: pointer;
+}
+
 /* UTILITIES */
 
 .d-flex {
@@ -86,6 +101,10 @@ header .btn {
 
 /* MAIN */
 
+main {
+    width: 100vw;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -97,6 +116,7 @@ header .btn {
     padding-right: 20px;
     background-color: black;
     z-index: 998;
+    overflow: hidden;
 }
 
 .sidebar a {
@@ -116,11 +136,28 @@ header .btn {
     margin: 0.8rem 0;
 }
 
+.menu-top ul li.active a {
+    color: white;
+}
+
+.menu-top ul .active::before {
+    content: "";
+    background-color: lightgreen;
+    height: 100%;
+    position: absolute;
+    width: 2px;
+    left: -20px;
+}
+
 .menu-top li svg {
     width:1.5rem;
     vertical-align: middle;
     margin-right: 0.3rem;
     color: #7A7A7A;
+}
+
+.menu-top li svg.active {
+    color: #c1c1c1;
 }
 
 .sidebar .logo {
@@ -153,26 +190,28 @@ header .btn {
     margin-bottom: 1rem;
 }
 
-.sidebar-ft .download {
-    display: block;
+.download {
     padding: 10px 0;
     border-bottom: 1px solid #7A7A7A;
 }
 
-.download svg {
+svg.download-icon {
     width: 16px;
-    vertical-align: middle;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
-.sidebar-ft .profile {
-    display: block;
+.profile {
+    padding: 10px 0;
+}
+
+.sidebar-ft .profile-txt {
     padding: 10px 0;
     font-weight: 700;
     color: white;
 }
 
-.profile svg {
+svg.profile-icon {
     height: 1.5rem;
     width: 1.5rem;
     color: white;
@@ -201,7 +240,20 @@ header .btn {
 }
 
 .menu li {
-    padding: 0 0.7rem;
+    margin-bottom: 20px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 5px;
+}
+
+.menu .active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 40px;
+    background-color: lightgreen;
+    
 }
 
 .menu li a {
@@ -254,16 +306,23 @@ img.round {
 footer {
     z-index: 999;
     height: 90px;
-    width: 100%;
+    width: 100vw;
     background-color: #282828;
     bottom: 0;
     left: 0;
 }
 
 .ft-left, .ft-right {
-    margin: 0 12px;
     max-height: 42px;
-    max-width: 220px;
+    width: 220px;
+}
+
+.ft-left {
+    margin-left: 12px;
+}
+
+.ft-right {
+    margin-right: 12px;
 }
 
 .ft-left img {
@@ -272,7 +331,7 @@ footer {
 }
 
 .ft-left .song-info {
-    margin: 0 12px;
+    margin-left: 12px;
 }
 
 .ft-left h5 {
@@ -286,7 +345,7 @@ footer {
 }
 
 .ft-left .song-icons i {
-    margin: 0 10px;
+    margin-left: 10px;
 }
 
 /* PLAYER */
@@ -299,15 +358,22 @@ footer {
     color: white;
     width: 190px;
     flex-shrink: 1;
-    margin: 0 20px;
 }
 
 .player-icons i {
     font-size: 1rem;
 }
 
+.player-icons i:hover {
+    cursor: pointer;
+}
+
 .player-icons i.fa-circle-play {
     font-size: 2rem;
+}
+
+.player-icons i.fa-circle-play:hover {
+    transform: scale(1.1);
 }
 
 .song-time {
@@ -356,6 +422,10 @@ footer {
     width: 20%;
 }
 
+.progressbar-bg:hover {
+    cursor: pointer;
+}
+
 .progressbar-bg:hover .progressbar-active {
     background-color: greenyellow;
 }
@@ -381,6 +451,6 @@ footer {
 }
 
 .ft-right i {
-    margin: 0 8px;
     color: white;
+    margin-right: 10px;
 }
