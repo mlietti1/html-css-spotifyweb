@@ -35,6 +35,10 @@ h2, h3 {
     position: relative;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
 .justify-sb {
     justify-content: space-between;
 }
@@ -133,8 +137,8 @@ header .btn {
     font-size: 1rem;
 }
 
-.menu-playlist .fa-solid {
-    font-size: 2.5rem;
+.menu-playlist .fa-square-plus {
+    font-size: 2.3rem;
     vertical-align: middle;
     margin-right: 0.5rem;
 }
@@ -256,8 +260,8 @@ footer {
     left: 0;
 }
 
-.ft-left {
-    margin-left: 12px;
+.ft-left, .ft-right {
+    margin: 0 12px;
     max-height: 42px;
     max-width: 220px;
 }
@@ -285,6 +289,8 @@ footer {
     margin: 0 10px;
 }
 
+/* PLAYER */
+
 .ft-center {
     width: 40%;
 }
@@ -293,6 +299,7 @@ footer {
     color: white;
     width: 190px;
     flex-shrink: 1;
+    margin: 0 20px;
 }
 
 .player-icons i {
@@ -303,18 +310,77 @@ footer {
     font-size: 2rem;
 }
 
-.progressbar {
+.song-time {
+    width: 100%;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.song-time .progressbar {
     width: 100%;
 }
 
-.progressbar span {
-    font-weight: 700;
+.song-time span {
+    display: block;
     color: white;
+    font-size: 12px;
 }
 
 .progressbar-bg {
-    width: 90%;
     height: 4px;
     background-color: #7A7A7A;
     border-radius: 4px;
+}
+
+.song-time .progressbar-bg {
+    width: 100%;
+}
+
+.volume .progressbar-bg {
+    width: 120px;
+}
+
+.progressbar-active {
+    left: 0;
+    top: 0;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #c1c1c1;
+}
+
+.song-time .progressbar-active {
+    width: 10%;
+}
+
+.volume .progressbar-active {
+    width: 20%;
+}
+
+.progressbar-bg:hover .progressbar-active {
+    background-color: greenyellow;
+}
+
+.progressbar-bg:hover .progressbar-btn {
+    display: block;
+}
+
+.progressbar-btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    display: none;
+}
+
+.song-time .progressbar-btn {
+    left: calc(10% - 5px);
+}
+
+.volume .progressbar-btn {
+    left: calc(20% - 5px);
+}
+
+.ft-right i {
+    margin: 0 8px;
+    color: white;
 }
