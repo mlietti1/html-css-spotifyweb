@@ -1,4 +1,4 @@
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
 
     .row {
         width: 50%;
@@ -7,16 +7,16 @@
 
 @media screen and (max-width: 800px) {
 
-    .row {
+    .page-content .row {
         width: 100%;
     }
 
     .ft-left {
-        height: 37px;
+        min-height: 37px;
     }
 
-    .ft-left {
-        height: 37px;
+    .ft-left img {
+        min-width: 37px;
     }
 
 }

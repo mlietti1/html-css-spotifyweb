@@ -102,6 +102,9 @@ header .btn {
 
 .sidebar ul {
     list-style: none;
+}
+
+.menu-top {
     margin-bottom: 1.5rem;
 }
 
@@ -146,11 +149,7 @@ header .btn {
     margin-bottom: 1rem;
 }
 
-.sidebar-ft {
-
-}
-
-.download {
+.sidebar-ft .download {
     display: block;
     padding: 10px 0;
     border-bottom: 1px solid #7A7A7A;
@@ -162,13 +161,21 @@ header .btn {
     margin-right: 10px;
 }
 
+.sidebar-ft .profile {
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    color: white;
+}
+
 .profile svg {
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
     color: white;
     background-color: #7A7A7A;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* CONTENT */
@@ -251,15 +258,17 @@ footer {
 
 .ft-left {
     margin-left: 12px;
-    height: 42px;
+    max-height: 42px;
+    max-width: 220px;
 }
 
 .ft-left img {
     object-fit: cover;
+    max-width: 42px;
 }
 
 .ft-left .song-info {
-    margin-left: 12px;
+    margin: 0 12px;
 }
 
 .ft-left h5 {
@@ -270,4 +279,42 @@ footer {
 
 .ft-left span {
     font-size: 12px;
+}
+
+.ft-left .song-icons i {
+    margin: 0 10px;
+}
+
+.ft-center {
+    width: 40%;
+}
+
+.ft-center .player-icons {
+    color: white;
+    width: 190px;
+    flex-shrink: 1;
+}
+
+.player-icons i {
+    font-size: 1rem;
+}
+
+.player-icons i.fa-circle-play {
+    font-size: 2rem;
+}
+
+.progressbar {
+    width: 100%;
+}
+
+.progressbar span {
+    font-weight: 700;
+    color: white;
+}
+
+.progressbar-bg {
+    width: 90%;
+    height: 4px;
+    background-color: #7A7A7A;
+    border-radius: 4px;
 }
